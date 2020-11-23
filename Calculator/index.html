@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+    </style>
+</head>
+<body class="index">
+
+<ul class="nav">
+    
+  <div class="logo">
+      <a href="../index.html">Home</a>
+  </div>
+
+  <li><a href=""> Calculator</a></li>
+  <li><a href="../Notes/index.html"> Notes</a></li>
+  <li><a href="../GETChecker/index.html"> GET Checker</a></li>
+
+</ul>
+<div class = "converters">
+    <form name = "formcalc">
+      <p>Convert from:</p>
+      <input type ="radio" id="decimal" name = "base1" checked="checked"  value="decimal">
+      <label for="decimal">Decimal</label>
+      <input type ="radio" id="hex" name = "base1" value="hex">
+      <label for="hex">Hex</label>
+      <input type ="radio" id="binary" name = "base1" value="binary">
+      <label for="binary">Binary</label>
+      <br>
+      <br>
+      Number to Convert <input type ="text" name="number1">
+      <br>
+      <p>Convert to:</p>
+      <input type ="radio" id="decimal" name = "base2" checked="checked" value="decimal">
+      <label for="decimal">Decimal</label>
+      <input type ="radio" id="hex" name = "base2" value="hex">
+      <label for="hex">Hex</label>
+      <input type ="radio" id="binary" name = "base2" value="binary" >
+      <label for="binary">Binary</label>
+      <br>
+      <br>
+      Result <input type ="text" name="result1" value='' readonly>
+      <br>
+      <br>
+      <input type = "button" value ="Calculate" onclick="calculate()">
+    </form>
+    <form name = "formcalc2">
+      <p>Convert from:</p>
+      <input type ="radio" id="decimal" name = "base1" checked="checked"  value="decimal">
+      <label for="decimal">Decimal</label>
+      <input type ="radio" id="hex" name = "base1" value="hex">
+      <label for="hex">Hex</label>
+      <input type ="radio" id="binary" name = "base1" value="binary">
+      <label for="binary">Binary</label>
+      <br>
+      <br>
+      Number to Convert <input type ="text" name="number1">
+      <br>
+      <p>Convert to:</p>
+      <input type ="radio" id="decimal" name = "base2" checked="checked" value="decimal">
+      <label for="decimal">Decimal</label>
+      <input type ="radio" id="hex" name = "base2" value="hex">
+      <label for="hex">Hex</label>
+      <input type ="radio" id="binary" name = "base2" value="binary">
+      <label for="binary">Binary</label>
+      <br>
+      <br>
+      Result <input type ="text" name="result1" value='' readonly>
+      <br>
+      <br>
+      <input type = "button" value ="Calculate" onclick="calculate2()">
+    </form>
+    <form name = "formcalc3">
+      <p>Convert from:</p>
+      <input type ="radio" id="decimal" name = "base1" checked="checked"  value="decimal">
+      <label for="decimal">Decimal</label>
+      <input type ="radio" id="hex" name = "base1" value="hex">
+      <label for="hex">Hex</label>
+      <input type ="radio" id="binary" name = "base1" value="binary">
+      <label for="binary">Binary</label>
+      <br>
+      <br>
+      Number to Convert <input type ="text" name="number1">
+      <br>
+      <p>Convert to:</p>
+      <input type ="radio" id="decimal" name = "base2" checked="checked" value="decimal">
+      <label for="decimal">Decimal</label>
+      <input type ="radio" id="hex" name = "base2" value="hex">
+      <label for="hex">Hex</label>
+      <input type ="radio" id="binary" name = "base2" value="binary">
+      <label for="binary">Binary</label>
+      <br>
+      <br>
+      Result <input type ="text" name="result1" value='' readonly>
+      <br>
+      <br>
+      <input type = "button" value ="Calculate" onclick="calculate3()">
+    </form>
+  </div>
+  <br>
+  <div class = arithmatic>
+    <form name = formarithmatic1>
+    <p>Choose Base</p>
+    <input type ="radio" id="decimal" name = "base1" checked="checked"  value="decimal">
+    <label for="decimal">Decimal</label>
+    <input type ="radio" id="hex" name = "base1" value="hex">
+    <label for="hex">Hex</label>
+    <input type ="radio" id="binary" name = "base1" value="binary">
+    <label for="binary">Binary</label>
+    <br>
+    <br>
+    First Number <br><input type ="text" name="number1">
+    <br>
+    
+    Second Number <br><input type ="text" name="number2">
+    <p>Operation</p>
+    <input type ="radio" id="addition" name = "base2" checked="checked" value="addition">
+    <label for="decimal">Addition</label>
+    <input type ="radio" id="subtraction" name = "base2" value="subtraction">
+    <label for="hex">Subtraction</label>
+    <br>
+    <br>
+    Result <input type ="text" name="result1" value='' readonly>
+    <br>
+    <br>
+    <input type = "button" value ="Calculate" onclick="calculate4()">
+  </form>
+  <form name = formarithmatic2>
+    <p>Choose Base</p>
+    <input type ="radio" id="decimal" name = "base1" checked="checked"  value="decimal">
+    <label for="decimal">Decimal</label>
+    <input type ="radio" id="hex" name = "base1" value="hex">
+    <label for="hex">Hex</label>
+    <input type ="radio" id="binary" name = "base1" value="binary">
+    <label for="binary">Binary</label>
+    <br>
+    <br>
+    First Number <br><input type ="text" name="number1">
+    <br>
+    
+    Second Number <br><input type ="text" name="number2">
+    <p>Operation</p>
+    <input type ="radio" id="addition" name = "base2" checked="checked" value="addition">
+    <label for="decimal">Addition</label>
+    <input type ="radio" id="subtraction" name = "base2" value="subtraction">
+    <label for="hex">Subtraction</label>
+    <br>
+    <br>
+    Result <input type ="text" name="result1" value='' readonly>
+    <br>
+    <br>
+    <input type = "button" value ="Calculate" onclick="calculate5()">
+  </form>
+  <form name = formarithmatic3>
+    <p>Choose Base</p>
+    <input type ="radio" id="decimal" name = "base1" checked="checked"  value="decimal">
+    <label for="decimal">Decimal</label>
+    <input type ="radio" id="hex" name = "base1" value="hex">
+    <label for="hex">Hex</label>
+    <input type ="radio" id="binary" name = "base1" value="binary">
+    <label for="binary">Binary</label>
+    <br>
+    <br>
+    First Number <br><input type ="text" name="number1">
+    <br>
+    
+    Second Number <br><input type ="text" name="number2">
+    <p>Operation</p>
+    <input type ="radio" id="addition" name = "base2" checked="checked" value="addition">
+    <label for="decimal">Addition</label>
+    <input type ="radio" id="subtraction" name = "base2" value="subtraction">
+    <label for="hex">Subtraction</label>
+    <br>
+    <br>
+    Result <input type ="text" name="result1" value='' readonly>
+    <br>
+    <br>
+    <input type = "button" value ="Calculate" onclick="calculate6()">
+  </form>
+  </div>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>

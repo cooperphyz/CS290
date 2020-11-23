@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+    </style>
+</head>
+<body class="index">
+
+<ul class="nav">  
+  <div class="logo">
+      <a href="../index.html">Home</a>
+  </div>
+
+  <li><a href="../Calculator/index.html"> Calculator</a></li>
+  <li><a href="#"> Notes</a></li>
+  <li><a href="../GETChecker/index.html"> GET Checker</a></li>
+</ul>
+<br>
+<div class = "add-note">
+  <a href="#myModal" class = "add-note">Add Note</a>
+</div>
+<br>
+<div id = "myModal" class = "modal">
+  <div class="modal-content">
+    <h1 class="header">
+      Add Note
+    </h1>
+    <form class = "note-form" action="">
+      <label for="">Title</label></br>
+      <input type="text" class="title"></br>
+      <label for="">Note</label></br>
+      <input class="note" type="text"></br>
+      <input class="submit"type="submit">
+      <div class="cancel">
+        <a href="#close" class="cancel-btn">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<table class="note-table">
+  <tr>
+    <td class="header">Title</td>
+    <td class="header">Note</td>
+  </tr>
+</table>
+
+    <script src="script.js"></script>
+</body>
+</html>

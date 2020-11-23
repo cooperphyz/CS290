@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+    </style>
+</head>
+<body class="index">
+
+<ul class="nav">
+    
+  <div class="logo">
+      <a href="../index.html">Home</a>
+  </div>
+
+  <li><a href="../Calculator/index.html"> Calculator</a></li>
+  <li><a href="../Notes/index.html"> Notes</a></li>
+  <li><a href="#"> Get Checker</a></li>
+
+</ul>
+<br>
+<div class = "converterswrapper">
+<div class = "converters">
+<h2>Weather Information Request</h2>
+    <div>
+
+    </div>
+    <form id="formOne" method="get">
+        <input id = "cityname" type="text" value="City Name">
+        <input id = "countrycode" type="text" value="Country Code ex. US, GB">
+        <input id = "submitOne" class="submitOne" type="submit" onclick="setValuesOne()">
+    </form>
+    <ul>
+      <li><span>City Input: </span><span id="CityInput"></span></li>
+      <li><span>Country ID Input: </span><span id="CountryInput"></span></li>
+    </ul>
+    <br>
+    <br>
+    <p>Status: </p><span id="Status"></span>
+    <p>Temperature: </p><span id="Temp"></span>
+    <p>Humidity: </p><span id="Humidity"></span>
+    <p>Wind Speed: </p><span id="Wind"></span>
+  </div>
+  <br>
+  <br>
+    <div style="width:600px;height:150px;line-height:3em;overflow:auto;padding:5px;">
+      Scrollbox Weather Request! Non functional, sadly.
+      <input id = textinput type = "text" value = "Textbox">
+      <div class = "converters">
+        <h2>Weather Information Request</h2>
+            <div>
+              
+            </div>
+            <form id="formTwo" method="get">
+                <input id = "cityname2" type="text" value="City Name">
+                <input id = "countrycode2" type="text" value="Country Code ex. US, GB">
+                <input id = "submitOne2" class="submitOne" type="submit" onclick="setValuesTwo()">
+            </form>
+            <ul>
+              <li><span>City Input: </span><span id="CityInput2"></span></li>
+              <li><span>Country ID Input: </span><span id="CountryInput2"></span></li>
+            </ul>
+            <br>
+            <br>
+            <p>Status: </p><span id="Status"></span>
+            <p>Temperature: </p><span id="Temp"></span>
+            <p>Humidity: </p><span id="Humidity"></span>
+            <p>Wind Speed: </p><span id="Wind"></span>
+          </div>
+      </div>
+      
+    <script src="./script.js"></script>
+  </body>
+</html>
+
