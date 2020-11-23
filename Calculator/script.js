@@ -12,7 +12,7 @@ function calculate() {
             }
             switch(document.formcalc.base2.value) {
                 case "hex":
-                    hexString = num1.toString(16)
+                    hexString = toHex(num1)
                     hexString = hexString.toUpperCase();
                     document.formcalc.result1.value=hexString;
             }
@@ -69,7 +69,7 @@ function calculate2() {
             }
             switch(document.formcalc2.base2.value) {
                 case "hex":
-                    hexString = num1.toString(16)
+                    hexString = toHex(num1)
                     hexString = hexString.toUpperCase();
                     document.formcalc2.result1.value=hexString;
             }
@@ -126,7 +126,7 @@ function calculate3() {
             }
             switch(document.formcalc3.base2.value) {
                 case "hex":
-                    hexString = num1.toString(16)
+                    hexString = toHex(num1)
                     hexString = hexString.toUpperCase();
                     document.formcalc3.result1.value=hexString;
             }
@@ -366,5 +366,10 @@ function decimalToHex(d, padding) {
         hex = "0" + hex;
     }
 
+    return hex;
+}
+function toHex(d) {
+    var hex = Number(d).toString(16);
+    hex = "000000".substr(0, 6 - hex.length) + hex;
     return hex;
 }
